@@ -1,0 +1,17 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent page scrolling */
+  overscroll-behavior: none; /* Prevent scroll chaining/bounce (supported on modern iOS) */
+}
+
+canvas {
+  display: block;
+  touch-action: none; /* Prevent native panning/zooming on canvas */
+  -ms-touch-action: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
