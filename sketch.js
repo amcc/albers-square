@@ -22,10 +22,10 @@ function draw() {
   let squareFill = mouseX/height * 360
 
   fill(squareFill, 80, 100);
-  square(width / 2, height / 2 + mouseY / 10, smallestDimension / 1.5);
+  square(width / 2, height / 2 + mouseY / 10, smallestDimension / 1.4);
 
   fill(squareFill, 60, 100);
-  square(width / 2, height / 2 + mouseY / 6, smallestDimension / 2);
+  square(width / 2, height / 2 + mouseY / 6, smallestDimension / 2.2);
 
   fill(squareFill, 40, 100);
   square(width / 2, height / 2 + mouseY / 4, smallestDimension / 4);
