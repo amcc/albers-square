@@ -11,16 +11,23 @@ function setup() {
 }
 
 function draw() {
-  background(mouseY, 100, 100);
+  // get a colour out of 360
+  let bgFill = mouseY/height * 360
+  background(bgFill, 80, 100);
+
   noStroke();
 
-  fill(mouseX, 100, 100);
+
+  // get a colour out of 360
+  let squareFill = mouseX/height * 360
+
+  fill(squareFill, 80, 100);
   square(width / 2, height / 2 + mouseY / 10, smallestDimension / 1.1);
 
-  fill(mouseX, 80, 100);
+  fill(squareFill, 60, 100);
   square(width / 2, height / 2 + mouseY / 6, smallestDimension / 2);
 
-  fill(mouseX, 60, 100);
+  fill(squareFill, 40, 100);
   square(width / 2, height / 2 + mouseY / 4, smallestDimension / 4);
 }
 
